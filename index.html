@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="html-hide-scrollbar">
+
+<head>
+	<title>Address book</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+<!-- CSS -->
+<!-- high priority css files -->
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="preload" as="style"
+	    onload="this.rel = 'stylesheet'">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="preload" as="style"
+		onload="this.rel = 'stylesheet'">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap"
+	rel="preload" as="style" onload="this.rel = 'stylesheet'">
+	<!-- fontawesome icons -->
+	<link href="/assets/font-awesome/css/font-awesome.min.css" rel="preload" as="style"
+		onload="this.rel = 'stylesheet'">
+	<!-- prism -->
+	<link href="/assets/prism/prism.css" rel="preload" as="style"
+	    onload="this.rel = 'stylesheet'">	
+	<!-- application css	 -->
+	<link href="app/style.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
+	<link href="app/input_SearchTable.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
+	<link href="app/icon_filter.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
+	<link href="app/table.css" rel="preload" as="style" onload="this.rel = 'stylesheet'">
+<!-- asynchronously load css files -->
+	<link href="app/dropdown_filter.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link href="app/form_addContact.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link href="app/tooltip.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<link href="/doc/booklet.css" rel="stylesheet" media="print" onload="this.media='all'">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" media="print"
+		onload="this.media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" media="print"
+		onload="this.media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bowlby+One+SC|Lilita+One&display=swap"
+		rel="stylesheet" media="print" onload="this.media='all'">
+	<!-- leaflet map  -->
+	<link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" media="print"
+		onload="this.media='all'"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
+	
+<!-- SCRIPTS -->
+	<script src="app/index.js"></script>
+<!-- dynamicaly load application scripts before init() -->
+	<script src="app/appendAppScripts.js"></script>	
+<!-- asynchronously load script files -->
+	<!-- google map -->
+	<script type="text/javascript" async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBv20hgn-XO4eow5hrPJbCTOh3SJ7wYXI">
+		</script>
+	<!-- leaflet map -->
+	<script integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin="" async defer>
+		</script>	
+</head>
+
+<body>
+	<div class="main-сontainer">		
+		<!-- Booklet-->
+		<div id='booklet' class="booklet-cover">
+			<div id="bookletSpiralBinding" class="spiral-binding"></div>
+			<div id="frontPage" class="front-page booklet-closed">
+				<div class="front-page-header">
+					<div class="front-page-header-text">Documentation</div>					
+					<span class="close-button close-booklet">
+						<div>&times;</div>
+					</span>
+				</div>
+				<div class='front-page-content'>
+					<div class='front-page-title'>Tabelo Project</div>					
+					<a href="#get_overview">Overview</a>
+					<a href="#get_userInterface">Table User Interface</a>
+					<a href="#get_docUserInterface">Doc User Interface</a>
+
+					<div class="dropdown-bt">Table Issues and Code
+						<i class="fa fa-caret-down"></i>
+					</div>
+					<div class="dropdown-container">
+						<a href="#get_tableOverview">Table Overview</a>
+						<a href="#get_tableContext">Table Context</a>
+						<a href="#get_tableContainer">Table Class</a>
+						<a href="#get_tableContainerHeader">Table Container Header</a>
+						<a href="#get_tableHeader1stRow">Table Header 1st Row</a>
+						<a href="#get_tableHeader2ndRow">Table Header 2nd Row</a>
+						<a href="#get_reusableElements">Reusable Elements</a>						
+						<a href="#get_tableSort">Table Sort</a>						
+						<a href="#get_tableSearch">Table Search</a>
+						<a href="#get_columnFilter">Column Filter</a>
+						<a href="#get_highlightResult">Highlight Search Results</a>
+						<a href="#get_responsiveTable">Responsive Table</a>
+						<a href="#get_zebraTable">Zebra Striped Table</a>
+						<a href="#get_highlightRow">Highlight selected row</a>
+						<a href="#get_highlightMouseRow">Highlight row under the mouse</a>							
+						<a href="#get_supplementalRow">Supplemental Row</a>
+						<a href="#get_addPortraitPhoto">Add Portrait Photo</a>
+						<a href="#get_addGoogleMaps">Add Google Maps</a>
+						<a href="#get_addLeafletMap">Add Leaflet Map</a>
+						<a href="#get_addSkype">Add Skype</a>
+						<a href="#get_addContactForm">Add Contact Form</a>
+						<a href="#get_modalDraggable">Modal Draggable</a>
+						<a href="#get_activateIcon">Activate Edit Icon</a>
+						<a href="#get_customizeScrollbar">Customize scrollbar</a>	
+						<a href="#get_localStorage">Local Storage</a>										
+					</div>
+
+					<div class="dropdown-bt">Doc Issues and Code
+						<i class="fa fa-caret-down"></i>
+					</div>
+					<div class="dropdown-container">
+						<a href="#get_docOverview">Overview</a>
+						<a href="#get_docHtml">Booklet html code</a>
+						<a href="#get_bookletClass">Booklet Class</a>
+						<a href="#get_docFrontPageClosed">Front Page Closed</a>							
+						<a href="#get_docFrontPageOpened">Front Page Opened</a>
+						<a href="#get_docRegularPage">Regular Page</a>
+						<a href="#get_docAddOpenIcon">Add Open Doc Icon</a>
+						<a href="#get_displaySnippets">Code snippets</a>
+						<a href="#get_verticalSeparator">Vertical Separator</a>
+					</div>
+
+					<div class="dropdown-bt">Index JavaScript
+						<i class="fa fa-caret-down"></i>
+					</div>
+					<div class="dropdown-container">
+						<a href="#get_anchorTag">anchor tag</a>
+						<a href="#get_arrowFunction">arrow function</a>
+						<a href="#get_class">class</a> 
+						<a href="#get_insertBefore">insertBefore()</a>
+						<a href="#get_json">JSON</a>
+						<a href="#get_proxy">proxy</a>
+						<a href="#get_querySelector">querySelector()</a>  
+						<a href="#get_sort">sort array</a> 
+					</div>
+					<div class="dropdown-bt">Index CSS
+						<i class="fa fa-caret-down"></i>
+					</div>
+					<div class="dropdown-container">
+						<a href="#get_arrowFunction">arrow function</a>	
+						<a href="#get_before">::before</a>					
+						<a href="#get_fieldset">fieldset</a>
+						<a href="#get_flex">flex</a>
+						<a href="#get_hover">:hover</a> 
+						<a href="#get_linearGradient">linear-gradient</a>
+						<a href="#get_media">@media</a>
+						<a href="#get_nthChild">nth-child</a>
+						<a href="#get_position">position</a>
+						<a href="#get_proxy">proxy</a>
+						<a href="#get_scrollbar">scrollbar</a>  
+						<a href="#get_textShadow">text-shadow</a>  
+						<a href="#get_transform">transform</a> 
+						<a href="#get_transition">transition</a>  
+						<a href="#get_zIndex">z-index</a> 
+					</div>
+					<div class="dropdown-bt">Index HTML
+						<i class="fa fa-caret-down"></i>
+					</div>
+					<div class="dropdown-container">
+						<a href="#get_caption">caption</a> 
+						<a href="#get_dataAttribute">data attribute</a>
+						<a href="#get_innerHTML">innerHTML</a>
+					</div>
+				</div>
+				<div class="front-page-footer"></div>
+			</div>			
+		</div>			
+		<div id="regularPageCover" class="regular-page-cover">
+			<div id="regularPage" class="regular-page">
+				<div class="regular-page-header"></div>
+				<div class='regular-page-content'>
+				</div>
+				<div class="regular-page-footer"></div>
+			</div>
+		</div>
+		<!-- Separator-->	
+		<div class="vertical-separator"></div>	
+		<!-- Table Address Book-->
+		<div id="contacts"></div>			
+	</div>
+
+	<!-- Form dialogAddContact -->
+	<div id="dialogAddContact" class="modal">
+		<div class="modal-content">
+			<form action="/" id="formAddContact" class="visible-scrollbar">				
+				<div class="banner banner-header">
+					<h2 id="form-header" class="banner-text">Add Contact Form</h2>
+					<span class="close-button">
+						<div>&times;</div>
+					</span>
+				</div>				
+				<div class="content-box">
+					<div class="dacItem">
+						<p>Name<span class="required">*</span></p>
+						<div class="name-item">
+							<input type="text" name="firstName" placeholder="First" required />
+							<input type="text" name="lastName" placeholder="Last" required />
+						</div>
+					</div>
+					<div class="dacItem">
+						<p>Upload Photo</p>
+						<input id="portrait" type="file" />
+					</div>
+					<div class="dacItem">
+						<p>Username<span class="required">*</span></p>
+						<input id="username" type="text" name="userName" placeholder="Username" required />
+					</div>
+					<div class="dacItem">
+						<p>Email<span class="required">*</span></p>
+						<input type="text" name="email" required />
+					</div>
+					<div class="dacItem">
+						<p>Mailing Address<span class="required">*</span></p>
+						<input type="text" name="apartment" placeholder="Apartment" required />
+						<input type="text" name="streetAddress" placeholder="Street address" required />
+						<div class="city-item">
+							<input type="text" name="city" placeholder="City" required />
+							<input type="text" name="zipCode" placeholder="Postal / Zip code" required />
+						</div>
+						<div class="city-item">
+							<select name="country" required>
+								<option value="">Country</option>
+								<option value="1">Ukraine</option>
+								<option value="2">Germany</option>
+								<option value="3">France</option>
+								<option value="4">Armenia</option>
+								<option value="5">USA</option>
+							</select>
+						</div>
+						<p>Building Photo</p>
+						<input type="text" name="photo" placeholder="Link to Building Photo" required />
+					</div>
+					<div class="dacItem">
+						<p>Geo Coordinates</p>
+						<div class="name-item">
+							<input type="text" name="latitude" placeholder="Latitude" />
+							<input type="text" name="longitude" placeholder="Longitude" />
+						</div>
+					</div>
+					<div class="dacItem">
+						<p>Phone<span class="required">*</span></p>
+						<input type="text" name="phone" required />
+					</div>
+					<div class="dacItem">
+						<p>Website<span class="required">*</span></p>
+						<input type="text" name="website" required />
+					</div>
+
+					<div class="dacItem">
+						<p>Company<span class="required">*</span></p>
+						<input type="text" name="companyName" placeholder="Company Name" required />
+						<input type="text" name="catchPhrase" placeholder="Catch Phrase" required />
+						<input type="text" name="bs" placeholder="BS" required />
+					</div>
+				</div>
+				<div class="btn-block">
+					<button type="submit" class="submit" href="/">Add Contact</button>
+				</div>
+
+				<div class="banner banner-footer">
+					<span class="footer-text">&copy;&nbsp;2020&nbsp;BouncingBits<span>
+							&nbsp;&nbsp;not-for-profit company</span></span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end of dialogAddContact  -->
+
+	<!-- dropdown filter -->
+	<div id="filterContainer" class="filter-container">
+		<div class="filter-hdr1">Search Columns</div>
+		<ul class="filter-ul">
+		</ul>
+		<div class="filter-hdr1">Search Case</div>
+		<ul class="filter-ul">
+			<li class="filter-li">
+				<input type="radio" id="radio1" name="searchType" class="filter-radio" value="insensitive" checked />
+				<label for="insensitive">Insensitive</label>
+			</li>
+			<li class="filter-li">
+				<input type="radio" id="radio2" name="searchType" class="filter-radio" value="sensitive" />
+				<label for="insensitive">Sensitive</label>
+			</li>
+		</ul>
+	</div>
+
+<!-- Highlight code in documentation	 -->
+<script src="/assets/prism/prism.js"></script>
+</body>
+</html>

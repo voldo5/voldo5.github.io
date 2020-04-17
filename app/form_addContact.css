@@ -12,38 +12,10 @@ form {
       resize: both;
       box-shadow: inset 25px 0px 25px -25px rgba(73, 73, 73, 0.45),
                   inset -25px 0px 25px -10px rgba(73, 73, 73, 0.45);      
-} 
-      /* form::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        } */
-        
-        /* Track */
-        /* form::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-            -webkit-border-radius: 6px;
-            border-radius: 6px;
-        } */
-        
-        /* Handle */
-        /* form::-webkit-scrollbar-thumb {
-            -webkit-border-radius: 6px;
-            border-radius: 6px;
-            background: rgba(255,0,0,0.8); 
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-        } */
-        /* form::-webkit-scrollbar-thumb:window-inactive {
-            background: rgba(255,0,0,0.4); 
-        } */
-
+}
 .content-box{
       padding: 20px 20px 8px 20px; 
-}  
-/* #dialogAddContact .header-box {
-      display: flex;           
-      justify-content: space-between;    
-      align-items: center;        
-}   */
+} 
 .banner {      
       z-index: 4;
       position: relative;     
@@ -72,16 +44,11 @@ form {
 .close-button {
       width: 24px;
       height: 24px; 
-      margin-right: 8px;      
-      /* padding-left: 1.0rem;           */
-      /* position: absolute; */
+      margin-right: 8px;  
       z-index: 999;
-      /* top: 10px;
-      right: 22px; */
 }
 .close-button>div { 
-      font-size: 2.1em;            
-      /* background-color: red; */
+      font-size: 2.1em;
       background-color: teal;
       color: #eee; 
       text-align: center;
@@ -117,15 +84,7 @@ form {
       letter-spacing: 1px;
       color: #eee;
       font-size: 0.5rem;
-}    
-/* @rhino: #323b40;
-@rhinoMid: #4f585e;
-@teal: #0096a1;
-@tealMid: #0ebac7;
-@red: #fc625c;
-@amber: #fdbc40;
-@green: #34c748;
-@offWhite: #e9eaea; */
+} 
 .dacItem input, .dacItem select, .dacItem textarea {
       margin-bottom: 10px;      
       margin-right: 6px;
@@ -141,10 +100,6 @@ select {
       padding: 7px 0;
       background: transparent;
 }
-      /* textarea {
-      width: calc(100% - 12px);
-      padding: 5px;
-      } */
       .dacItem:hover p, .dacItem:hover i, .question:hover p, .question label:hover, input:hover::placeholder, a {
       color: #095484;
       }
@@ -181,9 +136,6 @@ select {
       opacity: 0;
       cursor: pointer;
       }
-      /* input[type=radio], input[type=checkbox]  {
-      display: none;
-      } */
       label.radio, label.check {
       position: relative;
       display: inline-block;
@@ -218,9 +170,6 @@ select {
       border-radius: 2px;
       border: 1px solid #095484;
       }
-      /* input[type=checkbox]:checked + .check:before {
-      background: #095484;
-      } */
       label.radio:after {
       left: 5px;
       border: 3px solid #095484;
@@ -241,18 +190,13 @@ select {
       transform: rotate(-45deg);
       opacity: 0;
       }
-      /* input[type=radio]:checked + label:after, input[type=checkbox]:checked + label:after {
-      opacity: 1;
-      } */
 .btn-block {     
       margin-bottom: 1.4rem;
       text-align: center;
 }
-button {
-      /* width: 150px; */
+button {      
       width: 10rem;
-      padding: 0.8rem;
-      /* padding: 10px; */
+      padding: 0.8rem;     
       border: none;
       border-radius: 5px; 
       background: #095484;
@@ -263,8 +207,7 @@ button {
 button:hover {
       background: #0666a3;
 }
-button.submit{
-      /* background: teal;  */
+button.submit{      
       background-image: linear-gradient(to top, #008080, #00837e, #00867b, #008878, #058b74); 
 }
 
@@ -291,13 +234,9 @@ button.submit{
       width: 100%;
       height: 100%;
       background: rgba(235, 227, 227, 0);
-      /* background: red; */
-      /* border: 2px solid blue;                  */
       visibility: hidden;
       transform: scale(1.1);
       transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-      /* padding: 0;  
-      margin: 0;  */
 }
 .modal-content {  
       position: absolute;           
@@ -305,18 +244,13 @@ button.submit{
       left: 0; 
       background-color: #eeeeee; 
       padding: 0;  
-      margin: 0;      
-      /* min-width: 20%; */
-      /* border-radius: 0.5rem;  */
-      /* min-width: 10rem; */      
-      /* border: 1px solid  red;  */
+      margin: 0; 
       border: 1px solid  silver;    
 }
 .show-modal {
       opacity: 1;
       visibility: visible;
       display: block;
-      transform: scale(1.0);
-      /* transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;  */
+      transform: scale(1.0);     
 }            
             

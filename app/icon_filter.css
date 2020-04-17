@@ -1,90 +1,4 @@
-
-/* select {
-  width: 150px;
-}
-.select-checkbox-fa option::before {
-  font-family: FontAwesome;
-  content: "\f096";
-  width: 1.3em;
-  display: inline-block;
-  margin-left: 2px;
-}
-.select-checkbox-fa option:checked::before {
-  content: "\f046";
-} */
-
-/* --------------------------------------------- */
-
-/* input, select, textarea {
-  margin-bottom: 10px;      
-  margin-right: 6px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-  
-input {      
-  width: calc(100% - 18px);
-  padding: 5px;     
-} */
-
-/* ---------------------------------------------------- */
-
-/* .filter-dropdown .filter-ul {
-  padding: 2px;
-  display: inline-block;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-top: none;
-} */
-
-/* .filter-container1 {
-  min-width: 100px;
-  width: 100px;
-} */
-
-
-
-/* .dropdown-check-list {
-  display: inline-block;
-}
-.dropdown-check-list .anchor {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px 50px 5px 10px;
-  border: 1px solid #ccc;
-}
-.dropdown-check-list .anchor:after {
-  position: absolute;
-  content: "";
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  padding: 5px;
-  right: 10px;
-  top: 20%;
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-.dropdown-check-list .anchor:active:after {
-  right: 8px;
-  top: 21%;
-}
-.dropdown-check-list ul.items {
-  padding: 2px;
-  display: none;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-.dropdown-check-list ul.items li {
-  list-style: none;
-  display: inline;
-} */
-
-/* ------------------------    flex-container */
+/* flex-container */
 .container-iconFilter {    
     margin-left: 2.1rem;
     position: relative;    
@@ -102,8 +16,7 @@ input {
     font-weight: lighter ;
   } 
   .container-iconFilter .fa-filter:hover {
-   color: #00aff0;
-   /* color: #02729b; */  
+   color: #00aff0;   
    font-size: 1.3rem;
    margin: 0.2rem;
    padding: 0.2rem;  

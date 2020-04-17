@@ -16,8 +16,7 @@ class Data {
     callbackDisplayTable(containerDivId, items);
   } 
 
-  static sortByRule(sortRule, users) { 
-    //console.log("-------------sortRule = ", sortRule);   
+  static sortByRule(sortRule, users) {
     users.sort(Data.compareByMultipleKey(sortRule));
     return users;
   }

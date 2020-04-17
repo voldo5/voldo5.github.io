@@ -31,8 +31,7 @@ class IconFilter {
     toggleVisibility(dropdown){
         if(dropdown.classList.contains("visible")){
             dropdown.classList.remove("visible");
-            this.updateSearchFilter();
-            //table.PopulateTable(); 
+            this.updateSearchFilter();            
         }
         else{
             dropdown.classList.add("visible"); 

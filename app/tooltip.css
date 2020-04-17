@@ -73,9 +73,7 @@
 }
 .tooltip.shiftHamburger:before {  
   top: -4px;
-  left: 36px;  
-  /* z-index: 100001; */
-  /* z-index: 9999; */
+  left: 36px; 
   font-weight: 200;  
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;

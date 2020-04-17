@@ -14,7 +14,7 @@ class Table {
 	highlightIcon = {
 		set(target, property, value) {
 			if (property === 'row') {				
-				// activate/deactivate the edit icon depends on whether there is a selected line or not
+				// activate/deactivate the 'edit' icon depends on whether there is a selected line or not
 				if (document.querySelector(".updateRowIconContainer")) {
 					let element = document.querySelector('.updateRowIconContainer'); //.fa-pencil 				
 					if (value < 0) {
@@ -26,7 +26,7 @@ class Table {
 						element.style.opacity = 1;
 					}
 				}
-				// activate/deactivate delete icon depend of it is there a selected row or not	
+				// activate/deactivate 'delete' icon depend of it is there a selected row or not	
 				if (document.querySelector(".deleteRowIconContainer")) {
 					let element = document.querySelector('.deleteRowIconContainer'); 
 					if (value < 0) {
@@ -147,12 +147,9 @@ class Table {
 		let cell = document.createElement('th');
 		row.appendChild(cell);		
 		cell.innerHTML = this.getInnerHtmlForHeaderSecondRowCell();
-
-		//let iconFilter = new IconFilter("container-iconFilter", "icon-filter", "fa fa-filter");
-		icon_Filter = new IconFilter("container-iconFilter", "icon-filter", "fa fa-filter");
-		//icon_Filter = iconFilter;
-		let flexContainer = cell.querySelector(".icon-flex-container");		
-		//flexContainer.appendChild(iconFilter.span);	
+		
+		icon_Filter = new IconFilter("container-iconFilter", "icon-filter", "fa fa-filter");		
+		let flexContainer = cell.querySelector(".icon-flex-container");
 		flexContainer.appendChild(icon_Filter.span);	
 		cell.colSpan = this.table.rows[0].cells.length;	
 		cell.classList.add('table-tr2-head-cell');			
@@ -363,11 +360,6 @@ class Table {
 		let onClickSearch = `(function(){
 			   table.filterTable();									
 			})()`;
-
-		// let onClickContactsDb = `(function(){			
-		// })()`;
-		// let onClickContactsDb = `(function(){			
-		// return true;})()`;
 
 		let onClickDisplayTestContacts = `(function(){
 			table.displayTestContacts();									
@@ -832,29 +824,6 @@ class Table {
 		return coord;
 	}
 
-	// addGoogleMapsButton() {
-	// 	let span = document.createElement('span');
-	// 	span.id = "googleMapsButton";
-	// 	span.innerHTML = '<i id="googleMapsMarkerIcon" class="fa fa-map-marker" aria-hidden="true"></i>';
-
-	// 	return span;
-	// }
-
-	// addOpenStreetMapButton() {
-	// 	let span = document.createElement('span');
-	// 	span.id = "openStreetMapButton";
-	// 	span.innerHTML = '<i id="openStreetMapMarkerIcon" class="fa fa-map-marker" aria-hidden="true"></i>';
-
-	// 	return span;
-	// }
-	
-	// addPhotoButton(iconName) {
-	// 	let span = document.createElement('span');
-	// 	span.id = "photoButton";
-	// 	span.innerHTML = '<i id="photoIcon" class="' + iconName + '" aria-hidden="true"></i>';
-	// 	return span;
-	// }
-
 	getCellChildrenClasses(cell) {
 		let container = cell.children[0];
 		let childrenClasses = [];
@@ -885,9 +854,7 @@ class Table {
 		div.classList.add(cssClassName);
 		// contactId
 		if(name !== 'map'){
-			//div.style.backgroundImage = "url('/assets/photos/" + name + "')";
 			div.style.backgroundImage = "url('/assets/photos/" + name + "')";
-			//console.log('div.style.backgroundImage = ', div.style.backgroundImage);
 		}		
 		div.style.display = 'block';
 
@@ -951,54 +918,6 @@ class Table {
 			return iRow;			
 		}
 	}
-	
-	// putImageToSupplementalRow(photoName, cssClassName, iRowClickedIndex) {
-
-	// 	let iRow = iRowClickedIndex + 1;
-	// 	let currentRow = this.table.rows[iRow];
-	// 	// if (!currentRow) {
-	// 	// 	let row = this.table.insertRow(iRow);
-	// 	// 	row.classList.add('table-tr-data');
-	// 	// 	row.classList.add('table-tr-supplemental');
-	// 	// 	let cell = row.insertCell();
-	// 	// 	cell.colSpan = this.table.rows[0].cells.length;
-	// 	// 	cell.classList.add('table-tr-data-cell');
-	// 	// 	currentRow = row;
-	// 	// 	// this.table.insertRow(iRow);
-	// 	// 	// currentRow = this.table.rows[iRow];
-	// 	// 	//this.insertSupplementalRow(iRow);
-	// 	// 	//currentRow = this.table.rows[iRow];
-	// 	// }
-	// 	console.log("currentRow = ", currentRow);
-		
-	// 	let rowIndex = currentRow.rowIndex;
-	// 	console.log("currentRow.rowIndex = ", currentRow.rowIndex);
-	// 	//console.log("----------------SupplementalRow photoName = ", photoName);
-		
-	// 	if (currentRow.classList.contains("table-tr-supplemental")) {
-	// 		let cell = currentRow.cells[0];
-	// 		if (cell.children.length > 0) {
-	// 			let childrenClasses = this.getCellChildrenClasses(cell);				
-
-	// 			// delete supplemental row (toggle row by click on button)				
-	// 			if (childrenClasses.includes(cssClassName)) {					
-	// 				this.table.deleteRow(rowIndex);
-	// 				return -1;
-	// 			}
-	// 			else { // put photo to supplemental row
-	// 				let div = this.putImageToDiv(photoName, cssClassName);
-	// 				currentRow.cells[0].children[0].appendChild(div);
-	// 			}
-	// 		}
-	// 		return iRow;
-	// 	}
-	// 	else {  // add supplemental row and put photo
-	// 		let supplementalRow = this.insertSupplementalRow(iRow);			
-	// 		let container = this.putImageToFlexContainer(photoName, cssClassName);
-	// 		supplementalRow.cells[0].appendChild(container);
-	// 		return iRow;			
-	// 	}
-	// }	
 
 	initializeGoogleMaps(lat, lng, cell, iRowMap) {
 		var coord = { lat: Number(lat), lng: Number(lng) };

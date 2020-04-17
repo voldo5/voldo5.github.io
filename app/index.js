@@ -5,7 +5,7 @@ let formAddContact;
 let icon_Filter;
 let booklet;
 let currentLinkTextContent;
-let columnNames = ['Id', 'Name', 'User Name', 'Email', 'Address', 'Phone', 'Website', 'Company'];
+//let columnNames = ['Id', 'Name', 'User Name', 'Email', 'Address', 'Phone', 'Website', 'Company'];
 
 let separatorSpace = " ";
 let separatorBr = "<br>";

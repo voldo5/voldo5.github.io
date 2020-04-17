@@ -17,21 +17,12 @@
     opacity: 1; 
     color:  #00aff0;  
 }
-/* #tooltipSearch:before { 
-  top: -48px;
-  left: -64px;
-}
-#tooltipSearch:after {  
-  top: -14px;
-  left: -24px; 
-} */
 .input-searchTable .input-search {
   font-family: FontAwesome !important;  
   min-width: 120px;
   min-height: 24px;  
   font-size: 1.1rem;
-  margin: 0 0;
-  /* padding: 2px 0 2px 24px; */
+  margin: 0 0;  
   padding: 2px 0 2px 12px;
   width: 100%;
   background: #ecf0f1;

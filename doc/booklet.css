@@ -76,7 +76,6 @@
     border-top: 2px solid silver;
     background: linear-gradient(#eee,#eee,#eee, #eee);
     box-shadow: 5px 5px 6px 0px rgba(186,182,186,1);
-    /* transition: 0.5s;   */
 }
 .front-page.booklet-closed .front-page-header,
 .front-page.booklet-closed .front-page-footer
@@ -94,7 +93,6 @@
 }
 #booklet .front-page.booklet-closed  a,
 #booklet .front-page.booklet-closed .dropdown-bt{
-    /* padding: 0.2rem 1rem 0.3rem  0.3rem; */
     padding: 0.2rem 0.3rem 0.3rem  0.3rem;
     margin-left: 0.3rem;
     color: teal;
@@ -108,39 +106,18 @@
     background-color: teal;  
     color: #eee;   
 }
-
-/* #booklet .dropdown-bt.active{  
-    background: linear-gradient(to right, #8b8b8b 0%, #eee 96%, #dbdbdb 100%); 
-    color: 	rgb(245, 245, 245);
-} */
-
 #booklet .booklet-closed .dropdown-bt.active:hover{ 
     color: white;
 }
-#booklet .booklet-closed .dropdown-container {    
-    /* background-color: red; */
-    /* background-color: #d5ebe9; */
+#booklet .booklet-closed .dropdown-container {  
     margin-left: 0.3rem; 
     padding-right: 0;
     background: #d1d6d1; 
-    /* background: linear-gradient(to right, #d1d6d1 0%, #d9e4dd 80%, #eee 100%);     */
-}  
-
-
-/* #booklet .dropdown-container {
-    display: none;  
-    background: linear-gradient(to right, #D9D9D9 0%, #dbdbdb 80%, #eee 100%);    
-} */
-
-#booklet .front-page.booklet-closed a.a-active{  
-    /* background-color: #a1d8d8; */
-
+}
+#booklet .front-page.booklet-closed a.a-active{ 
     background: #b8beb8;
-    /* background: #eee; */
     padding: 0.2rem 1rem 0.3rem 0.6rem;
     margin-left: 0; 
-    /* margin-left: 0.3rem; */
-    /* color: #00aff0;; */
     font-weight: 500;
 }
 /***********************************
@@ -148,14 +125,11 @@
  ***********************************/
 .front-page {
     height: 100%;
-    /* width: 220px; */
     width: 230px;
-    /* width: 240px; */
     background: linear-gradient(90deg, rgba(232,229,229,1) 0%,
      rgba(253,254,255,1) 84%, rgba(222,223,224,1) 100%);
     overflow-x: hidden;
-    overflow-y:scroll;    
-    /* transition: 0.5s;  */
+    overflow-y:scroll; 
     border: 2px solid  rgb(186, 190, 192);      
     border-radius:75% 14% 13% 76% / 2% 1% 1% 2%; 
   }
@@ -184,9 +158,6 @@
     rgba(253,254,255,1) 84%, rgb(235, 232, 232) 100%);
 }
 /* text formatting */
-/* Calibri, 'Lilita One', Roboto, 'Abril Fatface', Raleway, */
-/* Georgia, 'Bookman Old Style', 'Merriweather',  */
-/* 'Times New Roman', Arial, Raleway, serif; */
 #booklet {
     text-align: left;    
 }
@@ -212,8 +183,7 @@
     text-align: center;   
 }
 #booklet .front-page a,
-#booklet .dropdown-bt {    
-    /* padding: 0.2rem 1rem 0.3rem 1.6rem;   */
+#booklet .dropdown-bt { 
     padding: 0.2rem 0.3rem 0.3rem 1.6rem;     
     text-decoration: none;
     font-family: Roboto, 'Roboto Condensed', Georgia, 'Bookman Old Style', serif;   
@@ -236,8 +206,7 @@
     color: rgb(32, 33, 34);
 }
 #booklet .dropdown-bt.active{  
-    background: linear-gradient(to right, #8b8b8b 0%, #eee 96%, #dbdbdb 100%);   
-    /* background: linear-gradient(to right, #8b8b8b 0%, #dbdbdb 80%, #eee 100%);     */
+    background: linear-gradient(to right, #8b8b8b 0%, #eee 96%, #dbdbdb 100%);
     color: 	rgb(245, 245, 245);
 }
 #booklet .dropdown-bt.active:hover{ 
@@ -259,13 +228,6 @@
 /***********************************
      regular page - booklet opened                           
  ***********************************/
-/* font-family: Roboto,"Noto Sans",sans-serif;   */
-/* 'Merriweather',Georgia, Raleway,  */
-/* font-family: Georgia, 'Merriweather', 'Bookman Old Style', sans-serif;  */
-/* @media screen and (max-height: 450px) {
-    .front-page {padding-top: 15px;}
-    .front-page a {font-size: 18px;}
-} */
 #regularPage {
     min-width: 220px; 
     max-width: 100%;
@@ -367,8 +329,6 @@
     max-height: 700px;   
 }
 .regular-page p a {
-    /* color: dodgerblue; */
-    /* color:#00aff0; */
     font-weight: 500;   
 }
 .regular-page h1,
@@ -405,12 +365,10 @@
 .regular-page a { 
     padding: 0.2rem 1rem 0 0.2rem;       
     text-decoration: none;
-    font-family: Georgia, Roboto, 'Roboto Condensed', 'Bookman Old Style', serif;    
-    /* font-size: 0.9rem !important;  */
+    font-family: Georgia, Roboto, 'Roboto Condensed', 'Bookman Old Style', serif;  
     font-size: 1rem !important; 
     line-height: 1rem;
     font-weight: 600; 
-    /* color: #2b6dad; */
     color: #0077aa;
     border: none;
     background: none;
@@ -504,19 +462,3 @@ fieldset {
 .vertical-separator.visible {
     display: block;
 }
-/* blockquote::before {
-    content: "“";
-}
-blockquote::after {
-    content: "”";
-} */
-/* q.show-cite[cite]::after {
-    content: "” (" attr(cite) ") ";
-  }
-  
-  q.on-hover[cite]::before {
-    content: "“";
-  }
-  q.on-hover[cite]:hover::after {
-    content: "” (" attr(cite) ") ";
-  } */

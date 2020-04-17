@@ -4,7 +4,7 @@ function appendAppScripts(finalCallback) {
         { src:'app/tableContext.js', id:'tableContext_js' },
         { src:'app/contact.js', id:'contact_js' },
         { src:'app/data.js', id:'data_js' },
-        { src:'doc/booklet.js', id:'booklet_js' },  // place is matter  
+        { src:'doc/booklet.js', id:'booklet_js' },  // row location matters 
         { src:'app/dropdown_filter.js', id:'dropdownfilter_js' },
         { src:'elements/dropdownContainer.js', id:'dropdownContainer_js' },
         { src:'elements/icon.js', id:'icon_js' },
@@ -21,9 +21,10 @@ function appendAppScripts(finalCallback) {
         { src:'app/table.js', id:'table_js' }, 
         
         //            documentation
-        // overview  
-        { src:'doc/get_template.js', id:'template_js' },
+        // overview  get_Fonts
+        { src:'doc/get_fonts.js', id:'fonts_js' },
         { src:'doc/get_overview.js', id:'overview_js' },
+        { src:'doc/get_template.js', id:'template_js' },
         { src:'doc/get_userInterface.js', id:'userInterface_js' },
         { src:'doc/get_docUserInterface.js', id:'docUserInterface_js' },
         // table issues 

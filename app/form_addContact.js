@@ -84,17 +84,13 @@ class FormAddContact {
 
 		// set form height depend of height browser window
 		// and resize it when browser resize
-        this.form.style.height = window.innerHeight - top - 40 + 'px';	  
-        //this.form.style.height = window.innerHeight - top - 180 + 'px';	       
+        this.form.style.height = window.innerHeight - top - 40 + 'px';
 		this.modal.classList.toggle("show-modal");		
     }
     
     SetFormTopLeftCoordinates(element){
         var rect = element.getBoundingClientRect();
-        let coord = {top: rect.bottom + 7, left: rect.left + 8};
-        //let coord = {top: rect.bottom + 7, left: rect.left - 5};
-        //let coord = {top: 0, left: 0};  
-        //console.log("rect.bottom  rect.left = ", rect.bottom + 7, rect.left - 5);
+        let coord = {top: rect.bottom + 7, left: rect.left + 8};        
         return coord;      
     }    
 
@@ -217,12 +213,7 @@ class FormAddContact {
         company.name = elements.companyName.value;
         company.catchPhrase = elements.catchPhrase.value;
         company.bs = elements.bs.value;        
-        //console.log("handleFormSubmit contact = ", contact);
         
-		// Use `JSON.stringify()` to make the output valid, human-readable JSON.
-		//let textContent = JSON.stringify(data, null, "  ");
-		
-        //console.log("formElements = ", elements);
         return contact;
     }    
     
@@ -234,9 +225,7 @@ class FormAddContact {
         let mouseY = 0;
         let mouseShiftX = 0
         let mouseShiftY = 0;
-
-        //document.querySelector(".modal-header").onmousedown = dragMouseDown;
-        //console.log("dragElement elementHeaderBar = ", elementHeaderBar);
+        
         elementHeaderBar.onmousedown = dragMouseDown;
 
         function dragMouseDown(e) {

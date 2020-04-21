@@ -6,7 +6,7 @@ function get_tableContainer() {
 <h4>Code.</p>
 <h5><strong>Keywords: class</strong></h5>
 
-<h5>1. Table class.</h5>
+<h4>1. Table class.</h4>
 <ul>
 <li>Add constructor</li>
 <li>Add displayTable() method</li>
@@ -51,7 +51,7 @@ class Table {
 }
 </code></pre></fieldset>
 
-<h5>2. Table object.</h5>
+<h4>2. Table object.</h4>
 <fieldset>
 <legend>JavaScript</legend>
 <div class="legend2">index.js</div>

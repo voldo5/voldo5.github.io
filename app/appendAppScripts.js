@@ -21,7 +21,7 @@ function appendAppScripts(finalCallback) {
         { src:'app/table.js', id:'table_js' }, 
         
         //            documentation
-        // overview  get_Fonts
+        // overview  
         { src:'doc/get_fonts.js', id:'fonts_js' },
         { src:'doc/get_overview.js', id:'overview_js' },
         { src:'doc/get_template.js', id:'template_js' },

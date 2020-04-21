@@ -40,8 +40,8 @@
   text-shadow: -1px 0 rgb(233, 231, 231), 0 1px lightblue, 1px 0 #eee, 0 -1px #eee;
   color: teal;
   line-height: 1.9rem;
-  font-weight: 700;
-  font-family: 'Lilita One', Roboto, 'Abril Fatface', Raleway, "Noto Sans", sans-serif;
+  font-weight: 700;  
+  font-family: 'Lilita One', sans-serif;
   background-image: linear-gradient(to top, #008080, #00837e, #00867b, #008878, #058b74);      
 }
 #contacts .table-container-header span { 
@@ -61,8 +61,8 @@
     margin: 0; 
     padding: 0; 
     border-spacing: 0;
-    border-collapse: separate;
-    font-family: Raleway, sans-serif !important;
+    border-collapse: separate;    
+    font-family: Roboto, sans-serif !important;
     font-size: 10pt;   
     cursor: default;     
   }
@@ -77,12 +77,13 @@
   width: 100%;
   margin: 0; 
   font-size: 1.1em !important;
-  font-weight: bold;
+  font-weight: bold; 
   color: #eee !important;
   cursor: pointer;
 }
 .table-tr-head { 
   font-size: 1.1em !important;
+  font-family: sans-serif !important;
 }
 .table-tr-head2 { 
   font-size: 1em !important; 

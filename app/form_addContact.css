@@ -35,7 +35,7 @@ form {
       padding-left: 1.8rem;
       line-height: 1.9rem;
       font-size: 1.6rem; 
-      font-family: 'Lilita One', "Noto Sans",  Raleway, 'Abril Fatface', Roboto, sans-serif;
+      font-family: 'Lilita One', sans-serif;
       font-weight: 700;                 
       color: teal;
       text-shadow: -1px 0 rgb(233, 231, 231), 0 1px #eee, 1px 0 #eee, 0 -1px #eee;
@@ -74,13 +74,13 @@ form {
       padding-left: 1.2rem;
       line-height: 1.6rem;
       font-size: 0.8rem; 
-      font-family: Raleway, 'Abril Fatface', Roboto, 'Lilita One', "Noto Sans", sans-serif;
+      font-family: Raleway, Roboto, sans-serif;
       font-weight: 500;                 
       color: #eee;      
       z-index: 2;     
       } 
 .footer-text>span {
-      font-family: Raleway, "Lucida Console", "Comic Sans MS", sans-serif;
+      font-family: Raleway, sans-serif;
       letter-spacing: 1px;
       color: #eee;
       font-size: 0.5rem;

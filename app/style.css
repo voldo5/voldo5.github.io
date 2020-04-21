@@ -12,7 +12,7 @@ html {
   overflow-y: hidden; 
 }
 body {  
-  font-family: Roboto,"Noto Sans",sans-serif;  
+  font-family: Roboto, sans-serif;  
   min-height: 100%;  
   background-color: #eee;
   overflow-y: visible;
@@ -23,7 +23,7 @@ div, form, input, select, textarea, p {
   padding: 0;
   margin: 0;
   outline: none;
-  font-family: Roboto, Arial, sans-serif;  
+  font-family: Roboto, sans-serif;  
   font-size: 1rem;
   color: #665;
   line-height: 22px;

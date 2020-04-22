@@ -88,7 +88,7 @@
 {  
     background: #eee;
 }
-#booklet .booklet-closed .front-page-header-text  {
+#booklet .booklet-closed .front-page-header-text  {     
     color: teal; 
     display: block;     
 }
@@ -108,7 +108,7 @@
     background: none;    
 }
 #booklet .booklet-closed a:hover,
-#booklet .booklet-closed .dropdown-bt:hover{    
+#booklet .booklet-closed .dropdown-bt:hover{ 
     color: deepskyblue;
 }
 #booklet .booklet-closed .dropdown-bt.active{
@@ -476,4 +476,24 @@ fieldset {
 }
 .example h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+}
+
+.w3-container {
+    /* padding: 0.01em 16px; */
+    padding: 0.6em 1em;
+    margin: 0 1em;
+    max-width: 600px;;
+}
+.w3-container:after, .w3-container:before  {
+    content: "";
+    display: table;
+    clear: both;
+}
+.w3-section {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+.w3-half {
+    float: left;
+    width: 100%;
 }

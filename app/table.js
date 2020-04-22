@@ -75,6 +75,12 @@ class Table {
 		// append table to container
 		this.container.appendChild(tableContainerHeader);
 		this.container.appendChild(this.table);
+
+		// stop display the loader - start display the table
+		let loader = document.querySelector('.loader-container');	    
+	    loader.style.display = 'none';
+		let cont = document.querySelector('#contacts');	    
+	    cont.style.display = 'initial';
 		
 		// unselect rows		
 		this.iSelectedRow.row = -1;	

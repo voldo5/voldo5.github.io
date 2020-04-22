@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" class="html-hide-scrollbar">
-
+<style>
+	.loader-container {
+	  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+	  min-height: 100vh;
+	  color: #3498db;
+	}
+	.loader {
+	  border: 8px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 8px solid #3498db;	  
+	  width: 60px;
+	  height: 60px;
+	  -webkit-animation: spin 2s linear infinite; /* Safari */
+	  animation: spin 2s linear infinite;
+	  margin: 0 auto; 
+	  
+	}	
+	/* Safari */
+	@-webkit-keyframes spin {
+	  0% { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}	
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+</style>
 <head>
 	<title>Address book</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,6 +83,13 @@
 </head>
 
 <body>
+	<div class="loader-container">
+		<h3>Address book</h3>
+		<h4>Loading ...</h4>
+		<div class="loader">			
+		</div>
+		<h5>'Oh My Contacts Tabelo' is an address book front-end web applications with plain JavaScript.</h5>		
+	</div>
 	<div class="main-сontainer">		
 		<!-- Booklet-->
 		<div id='booklet' class="booklet-cover">
@@ -71,6 +108,7 @@
 					<a href="#get_userInterface">Table User Interface</a>
 					<a href="#get_docUserInterface">Doc User Interface</a>
 					<a href="#get_fonts">Fonts</a>
+					<a href="#get_colors">Colors</a>
 
 					<div class="dropdown-bt">Table Issues and Code
 						<i class="fa fa-caret-down"></i>
@@ -174,7 +212,8 @@
 		<!-- Separator-->	
 		<div class="vertical-separator"></div>	
 		<!-- Table Address Book-->
-		<div id="contacts"></div>			
+		<!-- <div id="contacts"></div> -->
+		<div id="contacts" style="display: none;"></div>				
 	</div>
 
 	<!-- Form dialogAddContact -->

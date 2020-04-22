@@ -10,13 +10,6 @@ border-radius: 8px; margin: 8px 12px; padding: 4px 8px 4px 0px">
 to reading at smaller sizes. The look is also very modern and matches up nicely with more minimalist designs.</p>
 </div>
 
-<h5 style="font-size: 1rem">Sans-serif - table header</h5>
-<div style="border: 1px solid rgb(0, 128, 128, 0.75);
-border-radius: 8px; margin: 8px 12px; padding: 4px 8px 4px 0px">
-<h4 style="font-family: sans-serif; color: rgb(0, 128, 128);">This is a headline in <span class="stackname">sans-serif</span></h4>
-<p style="font-family: sans-serif; color: rgb(0, 128, 128);">Sans-serif looks good on a dark background and goes well with Roboto.</p>
-</div>
-
 <h5 style="font-size: 1rem">Roboto Slab - Doc headers, ordered and unordered lists</h5>
 <div style="border: 1px solid rgb(0, 128, 128, 0.75);
 border-radius: 8px; margin: 8px 12px; padding: 4px 8px 4px 0px">
@@ -42,6 +35,13 @@ This headline is in <span class="stackname">'Lilita One'</span></h2>
 Lilita One is a display typeface with a fat look, ideal for headlines and short texts.
 With a slightly condensed structure and some eye-catching details,
 it adds personal and soft looks to any page. Popular pairings with Lilita One - Roboto, Raleway.</p>
+</div>
+
+<h5 style="font-size: 1rem">Sans-serif - table header</h5>
+<div style="border: 1px solid rgb(0, 128, 128, 0.75);
+border-radius: 8px; margin: 8px 12px; padding: 4px 8px 4px 0px">
+<h4 style="font-family: sans-serif; color: rgb(0, 128, 128);">This is a headline in <span class="stackname">sans-serif</span></h4>
+<p style="font-family: sans-serif; color: rgb(0, 128, 128);">Sans-serif looks good on a dark background and goes well with Roboto.</p>
 </div>
 
 <h4>Links.</h4>

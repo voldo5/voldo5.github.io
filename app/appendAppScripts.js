@@ -22,6 +22,7 @@ function appendAppScripts(finalCallback) {
         
         //            documentation
         // overview  
+        { src:'doc/get_colors.js', id:'colors_js' },
         { src:'doc/get_fonts.js', id:'fonts_js' },
         { src:'doc/get_overview.js', id:'overview_js' },
         { src:'doc/get_template.js', id:'template_js' },

@@ -48,7 +48,7 @@ function appendAppScripts(finalCallback) {
         { src:'doc/get_supplementalRow.js', id:'supplementalRow_js' }, 
         { src:'doc/get_tableContainer.js', id:'tableContainer_js' }, 
         { src:'doc/get_tableContainerHeader.js', id:'tableContainerHeader_js' }, 
-        { src:'doc/get_tableContext.js', id:'tableContext_js' },
+        { src:'doc/get_tableContext.js', id:'doc_tableContext_js' },        
         { src:'doc/get_tableHeader1stRow.js', id:'tableHeader1stRow_js' },
         { src:'doc/get_tableHeader2ndRow.js', id:'tableHeader2ndRow_js' },
         { src:'doc/get_tableOverview.js', id:'tableOverview_js' }, 

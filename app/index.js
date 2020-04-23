@@ -5,14 +5,11 @@ let formAddContact;
 let icon_Filter;
 let booklet;
 let currentLinkTextContent;
-//let columnNames = ['Id', 'Name', 'User Name', 'Email', 'Address', 'Phone', 'Website', 'Company'];
 
 let separatorSpace = " ";
 let separatorBr = "<br>";
 let separatorComma = ", ";
 var containerDivId = "contacts";
-
-//var handler;
 var wrapper;
 var boxB;
 

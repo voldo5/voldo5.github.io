@@ -77,10 +77,8 @@ class Table {
 		this.container.appendChild(this.table);
 
 		// stop display the loader - start display the table
-		let loader = document.querySelector('.loader-container');	    
-	    loader.style.display = 'none';
-		let cont = document.querySelector('#contacts');	    
-	    cont.style.display = 'initial';
+		document.querySelector('.loader-container').style.display = 'none';
+		document.querySelector('#contacts').style.display = 'initial';
 		
 		// unselect rows		
 		this.iSelectedRow.row = -1;	

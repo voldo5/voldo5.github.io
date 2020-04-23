@@ -42,6 +42,7 @@ function appendAppScripts(finalCallback) {
         { src:'doc/get_highlightRow.js', id:'highlightRow_js' },   
         { src:'doc/get_localStorage.js', id:'localStorage_js' },
         { src:'doc/get_modalDraggable.js', id:'modalDraggable_js' },
+        { src:'doc/get_preloader.js', id:'preloader_js' },
         { src:'doc/get_responsiveTable.js', id:'responsiveTable_js' },
         { src:'doc/get_reusableElements.js', id:'reusableElements_js' },                
         { src:'doc/get_supplementalRow.js', id:'supplementalRow_js' }, 

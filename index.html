@@ -7,27 +7,19 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-	  min-height: 100vh;
-	  /* color: #3498db; */
+	  min-height: 100vh;	  
 	  color: teal;
 	  background-color: #eee;
 	  font-family: Arial, Helvetica, sans-serif;
 	}
-	.loader-container h4,
-	.loader-container h4,
-	.loader-container h5 {
-		color: teal;
-	}
 	.loader {
-	  border: 8px solid #f3f3f3;
-	  border-radius: 50%;
-	  /* border-top: 8px solid #3498db;	  */
-	  border-top: 8px solid teal;	 
+	  border: 8px solid #fdfdfd;	  
+	  border-radius: 50%;	 
+	  border-top: 8px solid teal; 	  
 	  width: 60px;
 	  height: 60px;
 	  -webkit-animation: spin 2s linear infinite; /* Safari */
-	  animation: spin 2s linear infinite;
-	  margin: 0 auto;
+	  animation: spin 2s linear infinite;	  
 	}	
 	/* Safari */
 	@-webkit-keyframes spin {
@@ -92,7 +84,7 @@
 
 <body>
 	<div class="loader-container">
-		<h3>Address book</h3>
+		<h1>Address Book</h1>
 		<h3>Loading ...</h3>
 		<div class="loader">			
 		</div>
@@ -146,7 +138,8 @@
 						<a href="#get_modalDraggable">Modal Draggable</a>
 						<a href="#get_activateIcon">Activate Edit Icon</a>
 						<a href="#get_customizeScrollbar">Customize scrollbar</a>	
-						<a href="#get_localStorage">Local Storage</a>										
+						<a href="#get_localStorage">Local Storage</a>	
+						<a href="#get_preloader">Preloader</a>									
 					</div>
 
 					<div class="dropdown-bt">Doc Issues and Code
@@ -219,8 +212,7 @@
 		</div>
 		<!-- Separator-->	
 		<div class="vertical-separator"></div>	
-		<!-- Table Address Book-->
-		<!-- <div id="contacts"></div> -->
+		<!-- Table Address Book-->		
 		<div id="contacts" style="display: none;"></div>				
 	</div>
 

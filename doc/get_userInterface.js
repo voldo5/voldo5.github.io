@@ -35,7 +35,7 @@ function get_userInterface() {
  <img src="\\assets\\picsDoc\\doc_callSkype.jpg" alt="Big monitor. General view."
  class="img-responsive" width="600" height="400">
     <h5>1.9. Call Landline</h5>        
- <img src="\\assets\\picsDoc\\doc_callLandline.jpg" alt="Big monitor. General view."
+ <img src="\\assets\\picsDoc\\doc_callLandline.jpg"
  class="img-responsive" width="600" height="400">  
      <h5>1.9. Tooltip</h5>        
  <img src="\\assets\\picsDoc\\doc_tooltip.jpg" alt="Big monitor. General view."

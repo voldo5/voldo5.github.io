@@ -1,11 +1,11 @@
 /* flex-container */
 .container-iconFilter {    
-    margin-left: 2.1rem;
+    margin-left: 2.1rem;    
     position: relative;    
 }
 .container-iconFilter:before { 
   top: -48px;
-  left: -96px;
+  left: -96px;  
 }
 .container-iconFilter .fa-filter {
     color: seagreen;

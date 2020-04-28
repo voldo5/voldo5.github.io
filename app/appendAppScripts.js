@@ -92,7 +92,13 @@ function appendAppScripts(finalCallback) {
         // html
         { src:'doc/get_caption.js', id:'caption_js' }, 
         { src:'doc/get_dataAttribute.js', id:'dataAttribute_js' },     
-        { src:'doc/get_innerHTML.js', id:'innerHTML_js' }   
+        { src:'doc/get_innerHTML.js', id:'innerHTML_js' }, 
+        // audit         
+        { src:'doc/get_audit.js', id:'audit_js' }, 
+        // time tracking
+        { src:'doc/get_timeTracking.js', id:'timeTracking_js' },   
+        // about
+        { src:'doc/get_about.js', id:'about_js' }           
     ];
 
     loadScripts(scriptUrls, finalCallback);   

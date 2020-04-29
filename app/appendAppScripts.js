@@ -19,12 +19,12 @@ function appendAppScripts(finalCallback) {
         { src:'app/form_addContact.js', id:'formAddContact_js' },
         { src:'app/parser.js', id:'parser_js' },
         { src:'app/table.js', id:'table_js' }, 
-        
         //            documentation
         // overview  
         { src:'doc/get_colors.js', id:'colors_js' },
         { src:'doc/get_fonts.js', id:'fonts_js' },
         { src:'doc/get_overview.js', id:'overview_js' },
+        { src:'doc/get_projectDirectory.js', id:'projectDirectory_js' },
         { src:'doc/get_template.js', id:'template_js' },
         { src:'doc/get_userInterface.js', id:'userInterface_js' },
         { src:'doc/get_docUserInterface.js', id:'docUserInterface_js' },

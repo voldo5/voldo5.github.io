@@ -61,7 +61,7 @@ with Unescaped Markup and Normalize Whitespace plugins.</p>
 	</script>	
 </fieldset>
 <p>See also  
-<a href="https://ourcodeworld.com/articles/read/140/top-5-best-code-syntax-highlighter-javascript-plugins">
+<a href="https://ourcodeworld.com/articles/read/140/top-5-best-code-syntax-highlighter-javascript-plugins" target="_blank">
 Top 5 : Best code syntax highlighter javascript plugins.</a></p>
 
 <h5>2.2. How to use Prism for formatting code snippets.</h5>

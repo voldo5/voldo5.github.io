@@ -33,7 +33,7 @@ class="img-responsive" width="600" height="400">
 </script>
 </fieldset>
 
-<h5>2. Add css to index.html before 'head' tag.</h5>
+<h5>2. Add css to 'head' tag of index.html.</h5>
 <fieldset>
 <legend>CSS</legend>
 <div class="legend2">index.html</div>

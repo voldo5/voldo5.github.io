@@ -44,11 +44,9 @@ function get_overview() {
         <li>Same for the CSS features: @media, flexbox, WebKit extensions and so on.</li>
         <li>The app can store contacts only in the Local Storage on client side.</li>
         <li>Now there is no way to add photos to new contacts.</li> 
-        <li>Html, js and css project files are not minimized for convenience.</li>       
+        <li>For convenience, the html, js and css project files are not minimized.</li>       
     </ul>
     </h4>
-    `;
-   
-      
+    `; 
     return markup;
 }

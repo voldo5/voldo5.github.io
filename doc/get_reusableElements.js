@@ -160,7 +160,7 @@ creating a chain of method calls.</p>
 html code. This html code we can dynamically add to the table.</p>
 <p>On the other hand, this toHtml() method use a toHtml() method of another object - IconContainer class object,
 in order to get innerHtml of iconContainer element. Thus, we can insert one element in another.</p>
-<p>All element classes are constructed similarly: constructor with paremeters, some methods
+<p>All element classes are constructed similarly: constructor with parameters, some methods
 and toHtml() method - to get html code of element.</p> 
 <p>See project folder 'elements'.</p>
 

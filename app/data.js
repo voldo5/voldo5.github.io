@@ -527,10 +527,104 @@ class Data {
           "catchPhrase": "Knowledge and Faith",
           "bs": "To provide a superior liberal education"
         }
-      }      
-    ]`;
+      },
 
-    //console.log("addTestJsonData users", users);
+      {
+        "id": 15,        
+        "name": {
+          "firstName": "Shai",
+          "lastName": "Fiss",
+          "photo": "Shai.jpg"
+        },        
+        "username": {
+          "username": "Shai",         
+          "avatar": "Shai-avatar1.jpg"
+        },
+        "email": "aptsmgr@harbourclubllc.com",
+        "address": {
+          "street": "161 Milligan Road West Babylon",
+          "suite": "The Harbour Club",
+          "city": "New Yourk",
+          "zipcode": "11704",
+          "geo": {
+            "lat": "40.681876",  
+            "lng": "-73.346965"
+          },
+          "photo": "TheHarbourClub.png"
+        },
+        "phone": "+1 631-669-2752",
+        "website": "https://harbourclubapartments.com/",
+        "company": {
+          "name": "The Harbour Club",
+          "catchPhrase": "Beautiful as a private manicured estate",
+          "bs": "To make technology an asset for you"
+        }
+      },
+
+      {
+        "id": 17,        
+        "name": {
+          "firstName": "Євген",
+          "lastName": "Родін",
+          "photo": "YevheniyRodin.jpg"
+        },        
+        "username": {
+          "username": "Yevheniy",         
+          "avatar": "YevheniyRodin-avatar.jpg"
+        },
+        "email": "rodin@newground.com.ua",
+        "address": {
+          "street": "16-А, КНЯЖИЙ ЗАТОН",
+          "suite": "офіс 99",
+          "city": "Київ",
+          "zipcode": "02095",
+          "geo": {
+            "lat": "50.403479", 
+            "lng": "30.616733"
+          },
+          "photo": "КНЯЖИЙ_ЗАТОН.jpg"
+        },
+        "phone": "+38 044 200-04-43",
+        "website": "https://newground.ua/",
+        "company": {
+          "name": "NewGround LLC",
+          "catchPhrase": "We bring the experience with us to each new project",
+          "bs": "Delivering the Next Generation of software solutions"
+        }
+      } ,
+
+      {
+        "id": 18,        
+        "name": {
+          "firstName": "Ludmila",
+          "lastName": "Jasna",
+          "photo": "Jasna.jpg"
+        },        
+        "username": {
+          "username": "Jasna",         
+          "avatar": "Jasna-avatar2.png"
+        },
+        "email": "Ludmila.Jasna@gmail.com",
+        "address": {
+          "street": "4, пр.Науки", 
+          "suite": "12",
+          "city": "Харків",
+          "zipcode": "02095",
+          "geo": {
+            "lat": "50.008855", 
+            "lng": "36.228332"
+          },
+          "photo": "KHARKIV_MEDICAL1.jpg"
+        },
+        "phone": "+38 057-705-07-11",
+        "website": "http://ludmilajasna.in.ua/",
+        "company": {
+          "name": "KHARKIV  NATIONAL  MEDICAL  UNIVERSITY",
+          "catchPhrase": "Довольно ли мы прожили, определяют не дни, не годы, а наши души",
+          "bs": "Где жизнь, там и поэзия"
+        }
+      }                    
+    ]`;
 
     return users;
   }
